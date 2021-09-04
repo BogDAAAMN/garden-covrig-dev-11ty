@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- https://github.com/joshbuchea/HEAD -->
+    <!-- Recommended --> <meta charset="UTF-8">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Elements -->
+    <meta
+    charset="utf-8"> <!-- Meta -->
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="generator" content="11ty"> <!-- Icons -->
+    <!-- https://favicon.io/ --> <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+    <title>{{ title or metadata.title }}</title>
+    <link rel="stylesheet" href="{{ '/site.css' | url }}">
+  </head>
 
-  <!-- https://github.com/joshbuchea/HEAD -->
-
-  <!-- Recommended -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Elements -->
-  <meta charset="utf-8">
-
-  <!-- Meta -->
-  <meta name="description" content="{{ metadata.description }}">
-  <meta name="generator" content="11ty">
-
-  <!-- Icons -->
-  <!-- https://favicon.io/ -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
-  <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
-
-
-  <title>{{ title or metadata.title }}</title>
-
-  <link rel="stylesheet" href="{{ '/site.css' | url }}">
-</head>
-
-<body class="font-sans leading-normal tracking-normal text-gray-900">
-
-  {{ content | safe }}
-
-</body>
+  <body>
+    <div class="px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
+      <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+        <h1>Garlic bread with cheese: What the science tells us</h1>
+        <p>
+          For years parents have espoused the health benefits of eating garlic bread with cheese to their children, with the food
+          earning such an iconic status in our culture that kids will often dress up as warm, cheesy loaf for Halloween.
+        </p>
+        <p>
+          But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases springing up around the
+          country.
+        </p>
+        <blockquote>
+          <p>Why is Tailwind removing the default styles on my
+            <code>h1</code>
+            elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
+        </blockquote>
+        <h2>supz?</h2>
+        <ol><li>We want everything to look good out of the box.</li><li>Really just the first reason, that's the whole point of the plugin.</li><li>Here's a third pretend reason though a list with three items looks more realistic than a list with two items.</li></ol>
+      </article>
+    </div>
+  </body>
 </html>
